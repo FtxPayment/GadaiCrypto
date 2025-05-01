@@ -1,1 +1,37 @@
-# GadaiCrypto
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crypto Pawnshop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-indigo-600 text-white p-6 text-center text-2xl font-bold">
+    Crypto Pawnshop
+  </header>
+
+  <main class="p-6 max-w-xl mx-auto">
+    <div class="bg-white p-6 rounded shadow">
+      <h2 class="text-xl font-semibold mb-4">Ajukan Gadai Crypto Anda</h2>
+      <form id="pawnForm" class="space-y-4">
+        <div>
+          <label class="block">Jenis Crypto</label>
+          <select id="crypto" class="w-full p-2 border rounded">
+            <option value="BTC">Bitcoin (BTC)</option>
+            <option value="ETH">Ethereum (ETH)</option>
+            <option value="USDT">Tether (USDT)</option>
+          </select>
+        </div>
+        <div>
+          <label class="block">Jumlah</label>
+          <input type="number" id="amount" class="w-full p-2 border rounded" placeholder="Jumlah dalam crypto">
+        </div>
+        <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded">Ajukan</button>
+      </form>
+      <div id="result" class="mt-4 text-green-600 font-bold"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+    </html>
